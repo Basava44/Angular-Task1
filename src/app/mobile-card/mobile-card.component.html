@@ -1,0 +1,32 @@
+<div class="cardwrapper" (dblclick)="update(mobileData.name, mobileData.price)">
+    <div class="head">
+        <h2>{{ mobileData.name }}</h2>
+        <button (click)="delete(mobileData)">Remove</button>
+    </div>
+    <div class="grid-container">
+        <div class="item">
+        <label>Price: </label>
+        <label>{{ mobileData.price }}</label>
+    </div>
+    <div class="item">
+        <label>RAM: </label>
+        <label>{{ mobileData.ram }}</label>
+    </div>
+    <div class="item">
+        <label>ROM: </label>
+        <label>{{ mobileData.rom }}</label>
+    </div>
+    <div class="item">
+        <label>Color: </label>
+        <label>{{ mobileData.color }}</label>
+    </div>
+    <div class="item">
+        <label>Display Size: </label>
+        <label>{{ mobileData.display }}</label>
+    </div>
+    <div class="item">
+        <label>Processor: </label>
+        <label>{{ mobileData.processor }}</label>
+    </div>
+    </div>
+</div>

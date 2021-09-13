@@ -1,0 +1,9 @@
+.mainwrapper{
+    width: auto;
+    margin: 0 200px;
+}
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+}
