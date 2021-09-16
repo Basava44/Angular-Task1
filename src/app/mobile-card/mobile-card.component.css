@@ -1,21 +1,22 @@
 .cardwrapper{
     border: 2px solid black;
-    padding: 5px 40px;
+    padding: 5px 30px;
     background-color: rgb(248, 248, 248);
-    width: 400px;
+    width: 450px;
     margin: 5px;
     border-radius: 16px;
-}
-
-.cardwrapper:hover{
-    background-color: rgba(11, 140, 253, 0.137);
 }
 
 .head{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 15px;
+    font-size: 12px;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: bold;
 }
 
 button{
@@ -27,7 +28,7 @@ button{
 
 button:hover{
     font-weight: bold;
-    font-size: 1rem;
+    color: red;
 }
 
 
@@ -51,4 +52,16 @@ button:hover{
 
 .item:hover{
     background-color: white;
+}
+
+.active{
+    background-color: red;
+}
+
+.edit{
+    cursor: pointer;
+}
+
+.updatePrice{
+    width: 40px;
 }

@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body{
-    background-color: rgb(238, 237, 236);
+    background-color: rgba(211, 205, 205, 0.246);
 }

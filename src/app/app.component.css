@@ -1,9 +1,16 @@
 .mainwrapper{
-    width: auto;
-    margin: 0 200px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .cardContainer{
     display: grid;
     grid-template-columns: auto auto;
+}
+
+.nocards{
+    font-size: 20px;
+    margin-left: 10px;
+    /* display: flex;
+    justify-content: center; */
 }

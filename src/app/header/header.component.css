@@ -4,9 +4,10 @@
     width: 300px;
     margin: 10px 0;
     padding: 5px 20px;
-    margin-left: 320px;
+    margin-left: 310px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
     min-height: 20px;

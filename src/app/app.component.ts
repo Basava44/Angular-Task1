@@ -8,11 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   currentMobile = 'Mobile';
   currentPrice = 'Price';
+  count!: number;
 
   devices = [
     {
       name: 'Poco F1',
-      price: '10000',
+      price: '16000',
       ram: '6GB',
       rom: '64GB',
       color: 'blue',
@@ -40,7 +41,7 @@ export class AppComponent {
     {
       name: 'IPhone X',
       price: '95000',
-      ram: '-',
+      ram: ` --- `,
       rom: '256GB',
       color: 'blue',
       display: '6 inch',
@@ -81,7 +82,7 @@ export class AppComponent {
       color: 'black',
       display: '5.5 inch',
       processor: 'Snapdragon',
-    },
+    }
   ];
 
   update(data: any) {
@@ -90,6 +91,10 @@ export class AppComponent {
   }
 
   deleteCard(data: any) {
+    if (data.name === this.currentMobile) {
+      this.currentMobile = 'Mobile';
+      this.currentPrice = 'Price';
+    }
     this.devices = this.devices.filter((mobile) => {
       return mobile != data;
     });

@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { MobileCardComponent } from './mobile-card/mobile-card.component';
 import { HeaderComponent } from './header/header.component';
 import { CountComponent } from './count/count.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CountComponent } from './count/count.component';
     CountComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
