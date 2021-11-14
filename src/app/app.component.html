@@ -1,16 +1,1 @@
-<div class="mainwrapper">
-  <app-header
-    [currentMobile]="currentMobile"
-    [currentPrice]="currentPrice"
-  ></app-header>
-  <app-count [count]="devices.length" ></app-count>
-  <p *ngIf="devices.length === 0" class="nocards">No Cards</p>
-  <div class="cardContainer">
-    <app-mobile-card
-    *ngFor="let device of devices"
-    [mobileData]="device"
-    (updateHeader)=update($event)
-    (deleteData)=deleteCard($event)
-  ></app-mobile-card>
-  </div>
-</div>
+<h1>Hello World</h1>
